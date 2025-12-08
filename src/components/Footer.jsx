@@ -1,12 +1,12 @@
 function Footer() {
     return (
         <header>
-            <div className="bg-primary d-flex justify-content-center align-items-center  py-4 gap-5">
-                <img className="icon-img" src="/buy-comics-digital-comics.png" alt="DC-phone" /><p className="text-white ">DIGITAL COMICS</p>
-                <img className="icon-img" src="/buy-comics-merchandise.png" alt="DC-phone" /><p className="text-white ">DC MERCHANDISE</p>
-                <img className="img-position" src="/buy-comics-shop-locator.png" alt="DC-phone" /><p className="text-white ">SUBSCRIPTION</p>
-                <img className="icon-img" src="/buy-comics-subscriptions.png" alt="DC-phone" /><p className="text-white ">COMIC SHOP LOCATOR</p>
-                <img className="icon-img" src="/buy-dc-power-visa.svg" alt="DC-phone" /><p className="text-white">DC POWER VISA</p>
+            <div className="bg-primary d-flex justify-content-center align-items-center py-4 gap-5">
+                <img className="icon-img" src="/buy-comics-digital-comics.png" alt="DC-phone" /><p className="text-white fs-5">DIGITAL COMICS</p>
+                <img className="icon-img" src="/buy-comics-merchandise.png" alt="DC-phone" /><p className="text-white fs-5">DC MERCHANDISE</p>
+                <img className="img-position" src="/buy-comics-shop-locator.png" alt="DC-phone" /><p className="text-white fs-5">SUBSCRIPTION</p>
+                <img className="icon-img" src="/buy-comics-subscriptions.png" alt="DC-phone" /><p className="text-white fs-5">COMIC SHOP LOCATOR</p>
+                <img className="icon-img" src="/buy-dc-power-visa.svg" alt="DC-phone" /><p className="text-white fs-5">DC POWER VISA</p>
             </div>
             <div className="bg-footer-dark pt-5 pb-3 bg-dc-comics">
                 <div className="container">
@@ -64,11 +64,11 @@ function Footer() {
                     <button className="btn btn-outline-primary text-white fw-bold">SIGN-UP NOW!</button>
                     <div className="d-flex align-items-center gap-3">
                         <span class="text-primary fw-bold">FOLLOW US</span>
-                        <img className="icon-img-footer" src="/footer-facebook.png" alt="facebook-icon" />
-                        <img className="icon-img-footer" src="/footer-twitter.png" alt="twitter-icon" />
-                        <img className="icon-img-footer" src="/footer-youtube.png" alt="youtube-icon" />
-                        <img className="icon-img-footer" src="/footer-pinterest.png" alt="pinterest-icon" />
-                        <img className="icon-img-footer" src="/footer-periscope.png" alt="periscope-icon" />
+                        <img className="" src="/footer-facebook.png" alt="facebook-icon" />
+                        <img className="" src="/footer-twitter.png" alt="twitter-icon" />
+                        <img className="" src="/footer-youtube.png" alt="youtube-icon" />
+                        <img className="" src="/footer-pinterest.png" alt="pinterest-icon" />
+                        <img className="" src="/footer-periscope.png" alt="periscope-icon" />
                     </div>
                 </div>
             </div>
