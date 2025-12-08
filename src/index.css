@@ -10,20 +10,20 @@ body {
 }
 
 #dc-logo-custom {
-  max-width: 6rem !important;
-  max-height: auto !important;
+  max-width: 6rem;
+  max-height: auto;
 
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   font-size: medium;
   font-weight: 600;
-  color: rgba(17, 17, 17, 0.959) !important;
+  color: rgba(17, 17, 17, 0.959);
 }
 
 a:hover {
-  color: #007bff !important;
+  color: #007bff;
 }
 
 p.text-footer-icon {
@@ -34,5 +34,25 @@ p.text-footer-icon {
 
 .icon-img {
   max-width: 4rem;
+  height: auto;
+}
+
+.bg-dc-comics {
+  background-image: url('/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.img-dc-footer {
+  max-width: 20rem;
+  width: auto;
+}
+
+#content-here {
+  min-height: 20vh;
+}
+
+.img-position {
+  max-width: 3rem;
   height: auto;
 }
