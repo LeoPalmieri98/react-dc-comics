@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#dc-logo-custom {
+  max-width: 6rem !important;
+  max-height: auto !important;
+
+}
+
+a {
+  text-decoration: none !important;
+  font-size: medium;
+  font-weight: 600;
+  color: rgba(17, 17, 17, 0.959) !important;
+}
+
+a:hover {
+  color: #007bff !important;
+}
+
+p.text-footer-icon {
+  color: white;
+  font-size: medium;
+
+}
+
+.icon-img {
+  max-width: 4rem;
+  height: auto;
+}
