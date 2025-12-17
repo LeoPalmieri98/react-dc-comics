@@ -5,31 +5,38 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  font-family: sans-serif;
 }
 
+
+/*CSS-HEADER*/
 #dc-logo-custom {
   max-width: 6rem;
   max-height: auto;
 
 }
 
-a {
-  text-decoration: none;
-  font-size: medium;
-  font-weight: 600;
-  color: rgba(17, 17, 17, 0.959);
-}
-
 a:hover {
   color: #007bff;
 }
 
+nav>ul>li>a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(17, 17, 17, 0.959);
+  display: inline-block;
+}
+
+.space-nav {
+  margin-left: 20rem;
+}
+
+/*CSS-FOOTER*/
+
 p.text-footer-icon {
   color: white;
   font-size: medium;
-
 }
 
 .icon-img {

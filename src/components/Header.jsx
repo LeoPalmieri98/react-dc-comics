@@ -1,11 +1,11 @@
 function Header() {
     return (
         <header>
-            <div className="container d-flex align-items-center py-3">
-                <div className="row align-items-center">
-                    <img id="dc-logo-custom" className="col" src="/dc-logo.png" alt="logoDC" />
-                    <nav className="col-8 justify-content-end">
-                        <ul className="d-flex list-unstyled gap-4 align-items-center ms-5 main-nav">
+            <div className="container align-items-center py-3">
+                <div className="row align-items-center ">
+                    <img id="dc-logo-custom" className="col-4" src="/dc-logo.png" alt="logoDC" />
+                    <nav className="col-8 space-nav">
+                        <ul className="d-flex list-unstyled gap-5 ms-5">
                             <li><a href="#">CHARACTERS</a></li>
                             <li><a href="#">COMICS</a></li>
                             <li><a href="#">MOVIES</a></li>
