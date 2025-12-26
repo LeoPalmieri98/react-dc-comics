@@ -36,7 +36,36 @@ nav>ul>li>a {
 
 #bg-jumbotron {
   width: 100%;
-  height: px;
+  max-height: 20rem;
+}
+
+.comic-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 15px;
+}
+
+
+.btn-load-more {
+  background-color: #0282f9;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.current-series-label {
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: -25px;
+  text-transform: uppercase;
 }
 
 /*CSS-FOOTER*/
