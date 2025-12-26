@@ -32,6 +32,13 @@ nav>ul>li>a {
   margin-left: 20rem;
 }
 
+/*CSS-MAIN*/
+
+#bg-jumbotron {
+  width: 100%;
+  height: px;
+}
+
 /*CSS-FOOTER*/
 
 p.text-footer-icon {
