@@ -1,10 +1,10 @@
 import comics from "./data/comics";
 function Main() {
     return (
-        <header id="content-here" className="text-white text-center">
+        <header id="content-here" className="bg-black text-white text-center">
             <div>
                 <img id="bg-jumbotron" src="/jumbotron.jpg" alt="jumbotronimg" />
-                <div class="current-series-label">
+                <div className="current-series-label">
                     Current Series
                 </div>
             </div>
@@ -17,8 +17,8 @@ function Main() {
                     })}
                 </div>
             </div>
-            <div class="text-center pb-5">
-                <button class="btn btn-load-more ">Load More</button>
+            <div className="text-center pb-5">
+                <button className="btn btn-load-more ">Load More</button>
             </div>
         </header >
     );

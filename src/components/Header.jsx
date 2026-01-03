@@ -7,9 +7,9 @@ function Header() {
                     <img id="dc-logo-custom" className="col-4" src="/dc-logo.png" alt="logoDC" />
                     <nav className="col-8 space-nav">
                         <ul className="d-flex list-unstyled gap-5 ms-5">
-                            {comics.map((navbar) => (
+                            {comics.map(navbar => {
                                 <li key={navbar.id}><a href="#">{navbar.title}</a></li>
-                            ))}
+                            })}
                         </ul>
                     </nav>
                 </div>
