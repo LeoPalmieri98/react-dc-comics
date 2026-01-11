@@ -5,8 +5,10 @@ function Footer() {
         <header>
             <div className="bg-primary d-flex justify-content-center align-items-center py-4 gap-5">
                 {navfooter.map(item => {
-                    return <figure><img className="icon-img" src={item.img} alt={item.description} />
-                        <p className="text-white fs-5">{item.title}</p></figure>
+                    return <>
+                        <img className="icon-img" src={item.img} alt={item.description} />
+                        <p className="text-white fs-5">{item.title}</p>
+                    </>
                 })}
             </div>
 
