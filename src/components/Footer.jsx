@@ -5,7 +5,8 @@ function Footer() {
         <header>
             <div className="bg-primary d-flex justify-content-center align-items-center py-4 gap-5">
                 {navfooter.map(item => {
-                    <><img className="icon-img" key={item.id} src={item.img} alt={item.description} /><p className="text-white fs-5">{item.title}</p></>
+                    return <figure><img className="icon-img" src={item.img} alt={item.description} />
+                        <p className="text-white fs-5">{item.title}</p></figure>
                 })}
             </div>
 
@@ -14,16 +15,16 @@ function Footer() {
                 <div className="container">
                     <div className="row">
                         {navfooterlinks.map(link => {
-                            return <div className="col">
+                            return <div className="col" key={link.id}>
                                 <h5 className="fw-bold text-white mb-2" >{link.title}</h5>
                                 <ul className="list-unstyled">
                                     {link.links.map(link => {
-                                        <li><a href="#" className="text-white text-opacity-75 text-decoration-none small" key={link.id}>{link.name}</a></li>
+                                        return <li key={link.id}><a href={link.href} className="text-white text-opacity-75 text-decoration-none small">{link.name}</a></li>
                                     })}
                                 </ul>
                             </div>
                         })}
-                        <div class="col-md-6">
+                        <div className="col-md-6">
                             <img className="img-dc-footer" src="/dc-logo-bg.png" alt="bg-dc-foot" />
                         </div>
                     </div>
@@ -35,7 +36,7 @@ function Footer() {
                 <div className="container d-flex justify-content-between align-items-center py-4">
                     <button className="btn btn-outline-primary text-white fw-bold">SIGN-UP NOW!</button>
                     <div className="d-flex align-items-center gap-3">
-                        <span class="text-primary fw-bold">FOLLOW US</span>
+                        <span className="text-primary fw-bold">FOLLOW US</span>
                         <img className="" src="/footer-facebook.png" alt="facebook-icon" />
                         <img className="" src="/footer-twitter.png" alt="twitter-icon" />
                         <img className="" src="/footer-youtube.png" alt="youtube-icon" />

@@ -1,4 +1,5 @@
-import comics from "./data/navbar";
+import navbar from "./data/navbar";
+
 function Header() {
     return (
         <header>
@@ -7,8 +8,8 @@ function Header() {
                     <img id="dc-logo-custom" className="col-4" src="/dc-logo.png" alt="logoDC" />
                     <nav className="col-8 space-nav">
                         <ul className="d-flex list-unstyled gap-5 ms-5">
-                            {comics.map(navbar => {
-                                <li key={navbar.id}><a href="#">{navbar.title}</a></li>
+                            {navbar.map(navbar => {
+                                return <li key={navbar.id}><a href="#">{navbar.title}</a></li>
                             })}
                         </ul>
                     </nav>

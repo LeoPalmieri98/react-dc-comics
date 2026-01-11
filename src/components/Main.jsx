@@ -1,4 +1,5 @@
 import comics from "./data/comics";
+import ProductCards from "./data/ProductCards";
 function Main() {
     return (
         <header id="content-here" className="bg-black text-white text-center">
@@ -11,9 +12,7 @@ function Main() {
             <div className="container py-5">
                 <div className="row">
                     {comics.map(comics => {
-                        return <div className="col-2 comic-card"><img src={comics.thumb} alt={comics.series} key={comics.id} />
-                            <h5>{comics.series}</h5>
-                        </div>
+                        return <ProductCards prodotto={comics} />
                     })}
                 </div>
             </div>
