@@ -4,15 +4,14 @@ function Main() {
     return (
         <header id="content-here" className="bg-black text-white text-center">
             <div>
-                <img id="bg-jumbotron" src="/jumbotron.jpg" alt="jumbotronimg" />
-                <div className="current-series-label">
-                    Current Series
+                <div id="bg-jumbotron" >
+                    <p className="current-series-label"> Current Series</p>
                 </div>
             </div>
             <div className="container py-5">
                 <div className="row">
                     {comics.map(comics => {
-                        return <ProductCards prodotto={comics} />
+                        return <ProductCards key={comics.id} prodotto={comics} />
                     })}
                 </div>
             </div>

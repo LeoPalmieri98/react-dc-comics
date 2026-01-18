@@ -11,28 +11,45 @@ function Footer() {
                     </>
                 })}
             </div>
-
-
             <div className="bg-footer-dark pt-5 pb-3 bg-dc-comics">
                 <div className="container">
                     <div className="row">
-                        {navfooterlinks.map(link => {
-                            return <div className="col" key={link.id}>
-                                <h5 className="fw-bold text-white mb-2" >{link.title}</h5>
+                        <div className="col">
+                            {navfooterlinks.slice(0, 2).map((section) => (
+                                <div key={section.title} className="mb-4">
+                                    <h5 className="fw-bold text-white mb-2">{section.title}</h5>
+                                    <ul className="list-unstyled">
+                                        {section.links.map((link) => (
+                                            <li key={link.id}>
+                                                <a href={link.href} className="text-white text-opacity-75 text-decoration-none small">
+                                                    {link.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                        {navfooterlinks.slice(2).map((section) => (
+                            <div className="col" key={section.title}>
+                                <h5 className="fw-bold text-white mb-2">{section.title}</h5>
                                 <ul className="list-unstyled">
-                                    {link.links.map(link => {
-                                        return <li key={link.id}><a href={link.href} className="text-white text-opacity-75 text-decoration-none small">{link.name}</a></li>
-                                    })}
+                                    {section.links.map((link) => (
+                                        <li key={link.id}>
+                                            <a href={link.href} className="text-white text-opacity-75 text-decoration-none small">
+                                                {link.name}
+                                            </a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
-                        })}
+                        ))}
                         <div className="col-md-6">
                             <img className="img-dc-footer" src="/dc-logo-bg.png" alt="bg-dc-foot" />
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <div className="bg-dark py-3">
                 <div className="container d-flex justify-content-between align-items-center py-4">
